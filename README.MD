@@ -1,0 +1,1 @@
+ - Euclid's algorithm for several numbers

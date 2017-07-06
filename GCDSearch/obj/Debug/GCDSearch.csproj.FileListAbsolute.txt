@@ -1,0 +1,5 @@
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch\bin\Debug\GCDSearch.dll
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch\bin\Debug\GCDSearch.pdb
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch\obj\Debug\GCDSearch.csprojResolveAssemblyReference.cache
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch\obj\Debug\GCDSearch.dll
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch\obj\Debug\GCDSearch.pdb

@@ -1,0 +1,9 @@
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch.Tests\bin\Debug\GCDSearch.Tests.dll
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch.Tests\bin\Debug\GCDSearch.Tests.pdb
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch.Tests\bin\Debug\GCDSearch.dll
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch.Tests\bin\Debug\nunit.framework.dll
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch.Tests\bin\Debug\GCDSearch.pdb
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch.Tests\bin\Debug\nunit.framework.xml
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch.Tests\obj\Debug\GCDSearch.Tests.csprojResolveAssemblyReference.cache
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch.Tests\obj\Debug\GCDSearch.Tests.dll
+c:\users\kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\GCDSearch.Tests\obj\Debug\GCDSearch.Tests.pdb

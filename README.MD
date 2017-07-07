@@ -1,1 +1,3 @@
- - Euclid's algorithm for several numbers
+Class GCD provides opportunities to find the greatest common divisor for several integers by:
+ - Euclid's algorithm
+ - Stein algorithm

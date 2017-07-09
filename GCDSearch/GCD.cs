@@ -10,10 +10,12 @@ namespace GCDSearch
         /// <summary>
         /// This method allows us to find the greatest common divisor by Euclid's algorithm for set of integers
         /// </summary>
+        /// <param name="time">Method execution time</param>
         /// <param name="nums">Set of integers</param>
         /// <returns>Greatest common divisor</returns>
-        public static int AlgorithmOfEuclid(params int[] nums)
+        public static int AlgorithmOfEuclid(out TimeSpan time, params int[] nums)
         {
+            var start = DateTime.Now;
             if (nums.Length < 2)
                 throw new ArgumentException();
 
@@ -22,6 +24,7 @@ namespace GCDSearch
             {
                 tempGCD = EuclidMain(tempGCD, nums[i]);
             }
+            time = DateTime.Now - start; 
             return tempGCD;
         }
 
@@ -29,10 +32,12 @@ namespace GCDSearch
         /// <summary>
         /// This method allows us to find the greatest common divisor by Stein algorithm for set of integers
         /// </summary>
+        /// <param name="time">Method execution time</param>
         /// <param name="nums">Set of integers</param>
         /// <returns>Greatest common divisor</returns>
-        public static int AlgorithmOfStein(params int[] nums)
+        public static int AlgorithmOfStein(out TimeSpan time, params int[] nums)
         {
+            var start = DateTime.Now;
             if (nums.Length < 2)
                 throw new ArgumentException();
 
@@ -41,6 +46,7 @@ namespace GCDSearch
             {
                 tempGCD = SteinMain(tempGCD, Math.Abs(nums[i]));
             }
+            time = DateTime.Now - start;
             return tempGCD;
         }
 

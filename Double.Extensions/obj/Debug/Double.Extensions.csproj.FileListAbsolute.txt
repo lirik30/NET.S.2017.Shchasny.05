@@ -1,0 +1,5 @@
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\Double.Extensions\bin\Debug\Double.Extensions.dll
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\Double.Extensions\bin\Debug\Double.Extensions.pdb
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\Double.Extensions\obj\Debug\Double.Extensions.dll
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\Double.Extensions\obj\Debug\Double.Extensions.pdb
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\Double.Extensions\obj\Debug\Double.Extensions.csprojResolveAssemblyReference.cache

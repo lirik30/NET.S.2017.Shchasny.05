@@ -1,0 +1,9 @@
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\PolynomialLogic.Tests\bin\Debug\PolynomialLogic.Tests.dll
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\PolynomialLogic.Tests\bin\Debug\PolynomialLogic.Tests.pdb
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\PolynomialLogic.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\PolynomialLogic.Tests\bin\Debug\PolynomialLogic.dll
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\PolynomialLogic.Tests\bin\Debug\PolynomialLogic.pdb
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\PolynomialLogic.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\PolynomialLogic.Tests\obj\Debug\PolynomialLogic.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\PolynomialLogic.Tests\obj\Debug\PolynomialLogic.Tests.dll
+C:\Users\Kiril\documents\visual studio 2017\Projects\NET.S.2017.Shchasny.05\PolynomialLogic.Tests\obj\Debug\PolynomialLogic.Tests.pdb

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace GCDSearch
 {
@@ -7,15 +8,34 @@ namespace GCDSearch
     /// </summary>
     public static class GCD
     {
+
+        /// <summary>
+        /// This method allows us to find the greatest common divisor by Euclid's algorithm for 2 integers
+        /// and return the method execution time by out-parameter
+        /// </summary>
+        /// <param name="time">Method execution time</param>
+        /// <param name="first">First integer</param>
+        /// <param name="second">Second integer</param>
+        /// <returns>Greatest common divisor</returns>
+        public static int AlgorithmOfEuclid(out long time, int first, int second)
+        {
+            var start = Stopwatch.StartNew();
+            int result = EuclidMain(first, second);
+            time = start.ElapsedMilliseconds;
+            return result;
+        }
+
+
         /// <summary>
         /// This method allows us to find the greatest common divisor by Euclid's algorithm for set of integers
+        /// and return the method execution time by out-parameter
         /// </summary>
         /// <param name="time">Method execution time</param>
         /// <param name="nums">Set of integers</param>
         /// <returns>Greatest common divisor</returns>
-        public static int AlgorithmOfEuclid(out TimeSpan time, params int[] nums)
+        public static int AlgorithmOfEuclid(out long time, params int[] nums)
         {
-            var start = DateTime.Now;
+            var start = Stopwatch.StartNew();
             if (nums.Length < 2)
                 throw new ArgumentException();
 
@@ -24,20 +44,38 @@ namespace GCDSearch
             {
                 tempGCD = EuclidMain(tempGCD, nums[i]);
             }
-            time = DateTime.Now - start; 
+            time = start.ElapsedMilliseconds; 
             return tempGCD;
         }
 
 
         /// <summary>
+        /// This method allows us to find the greatest common divisor by Stein algorithm for 2 integers
+        /// and return the method execution time by out-parameter
+        /// </summary>
+        /// <param name="time">Method execution time</param>
+        /// <param name="first">First integer</param>
+        /// <param name="second">Second integer</param>
+        /// <returns>Greatest common divisor</returns>
+        public static int AlgorithmOfStein(out long time, int first, int second)
+        {
+            var start = Stopwatch.StartNew();
+            int result = SteinMain(first, second);
+            time = start.ElapsedMilliseconds;
+            return result;
+        }
+
+
+        /// <summary>
         /// This method allows us to find the greatest common divisor by Stein algorithm for set of integers
+        /// and return the method execution time by out-parameter
         /// </summary>
         /// <param name="time">Method execution time</param>
         /// <param name="nums">Set of integers</param>
         /// <returns>Greatest common divisor</returns>
-        public static int AlgorithmOfStein(out TimeSpan time, params int[] nums)
+        public static int AlgorithmOfStein(out long time, params int[] nums)
         {
-            var start = DateTime.Now;
+            var start = Stopwatch.StartNew();
             if (nums.Length < 2)
                 throw new ArgumentException();
 
@@ -46,9 +84,10 @@ namespace GCDSearch
             {
                 tempGCD = SteinMain(tempGCD, Math.Abs(nums[i]));
             }
-            time = DateTime.Now - start;
+            time = start.ElapsedMilliseconds;
             return tempGCD;
         }
+
 
         /// <summary>
         /// Stein algorithm for 2 integers
@@ -74,6 +113,7 @@ namespace GCDSearch
 
             return a > b ? SteinMain((a - b) >> 1, b) : SteinMain((b - a) >> 1, a);
         }
+
 
         /// <summary>
         /// Classical Euclid's algorithm for 2 integers

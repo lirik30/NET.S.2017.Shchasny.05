@@ -19,17 +19,17 @@ namespace GCDSearch.Tests
         [TestCase(78, 294, 570, 36, ExpectedResult = 6)]
         [TestCase(10, 20, 30, 40, 50, 60, 70, 80, 90, 100, ExpectedResult = 10)]
         [TestCase(2, 3, 7, 11, 13, 17, 19, ExpectedResult = 1)]
-        public int AlgorithmOfEuclid_PositiveTests(params int[] nums)
+        public int AlgorithmOfEuclidWithParams_PositiveTests(params int[] nums)
         {
-            TimeSpan time;
+            long time;
             return AlgorithmOfEuclid(out time, nums);
         }
 
         [TestCase(1)]
         [TestCase()]
-        public void AlgorithmOfEuclid_ThrowsArgumentException(params int[] nums)
+        public void AlgorithmOfEuclidWithParams_ThrowsArgumentException(params int[] nums)
         {
-            TimeSpan time;
+            long time;
             Assert.Throws<ArgumentException>(() => AlgorithmOfEuclid(out time, nums));
         }
 
@@ -46,17 +46,17 @@ namespace GCDSearch.Tests
         [TestCase(78, 294, 570, 36, ExpectedResult = 6)]
         [TestCase(10, 20, 30, 40, 50, 60, 70, 80, 90, 100, ExpectedResult = 10)]
         [TestCase(2, 3, 7, 11, 13, 17, 19, ExpectedResult = 1)]
-        public int AlgorithmOfStein_PositiveTests(params int[] nums)
+        public int AlgorithmOfSteinWithParams_PositiveTests(params int[] nums)
         {
-            TimeSpan time;
+            long time;
             return AlgorithmOfStein(out time, nums);
         }
 
         [TestCase(1)]
         [TestCase()]
-        public void AlgorithmOfStein_ThrowsArgumentException(params int[] nums)
+        public void AlgorithmOfSteinWithParams_ThrowsArgumentException(params int[] nums)
         {
-            TimeSpan time;
+            long time;
             Assert.Throws<ArgumentException>(() => AlgorithmOfStein(out time, nums));
         }
 

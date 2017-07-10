@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Double.Extensions
 {
+    /// <summary>
+    /// Allows us to see a double-bit representation
+    /// </summary>
     public static class DoubleExtensions
     {
         [StructLayout(LayoutKind.Explicit)]
@@ -16,6 +19,11 @@ namespace Double.Extensions
             public readonly long helperLong;
         }
 
+        /// <summary>
+        /// Method allows us to see a double-bit representation.
+        /// </summary>
+        /// <param name="number">Double number</param>
+        /// <returns>String with bit representation of a double number</returns>
         public static string ToBinary(this double number)
         {
             const int BIT_NUMBER = 64;
@@ -30,7 +38,5 @@ namespace Double.Extensions
 
             return new string(binaryNumber.ToString().ToCharArray().Reverse().ToArray());
         }
-
-
     }
 }

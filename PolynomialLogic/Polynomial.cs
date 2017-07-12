@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Linq;
+using System.Configuration;
 
 namespace PolynomialLogic
 {
+    //TODO: ConfigurationManager not found
+
     /// <summary>
     /// Class provides methods for working with polynomials of a real variable.
     /// </summary>
     public sealed class Polynomial
     {
         private double[] coeffs;
+        private static readonly double epsilon;
 
         /// <summary>
         /// Degree of a polynomial
@@ -16,6 +20,13 @@ namespace PolynomialLogic
         public int Degree => coeffs.Length;
 
         #region ctors
+
+        static Polynomial()
+        {
+            if (!Double.TryParse(ConfigurationManager.AppSettings["epsilon"], out epsilon))
+                epsilon = 1E-6;
+        }
+
         /// <summary>
         /// Create new polynomial with coefficients like the elements of array
         /// </summary>
@@ -173,10 +184,10 @@ namespace PolynomialLogic
         /// <returns></returns>
         public override string ToString()
         {
-            string result = $"{this[0]}";
+            string result = Math.Abs(this[0]) > epsilon ? $"{this[0]}" : "";
             for (int i = 1; i < Degree; i++)
             {
-                if (Math.Abs(this[i] - 0.0) < double.Epsilon) continue;
+                if (Math.Abs(this[i]) <= epsilon) continue;
                 result += this[i] > 0 ? $"+{this[i]}x^{i}" : $"{this[i]}x^{i}";
             }
             return result;

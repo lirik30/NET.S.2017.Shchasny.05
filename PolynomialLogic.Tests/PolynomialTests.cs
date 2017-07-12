@@ -22,6 +22,10 @@ namespace PolynomialLogic.Tests
                         new Polynomial(0.0, 5.0, -4.0, 3.5),
                         new Polynomial(1.0, 0, 5.5, -6.45, 1.25)).
                     Returns("1+5x^1+1,5x^2-2,95x^3+1,25x^4");
+                yield return new TestCaseData(
+                        new Polynomial(1.0, 2.0, 3.0),
+                        new Polynomial(-1.0000000011, -2.0, -3.0)).
+                    Returns("");
             }
         }
 
@@ -75,12 +79,12 @@ namespace PolynomialLogic.Tests
                 yield return new TestCaseData(
                         new Polynomial(1.0, 0, 5.5, -6.45, 1.25),
                         new Polynomial(0.0, 5.0, -4.0, 3.5)).
-                    Returns("0+5x^1-4x^2+31x^3-54,25x^4+51,3x^5-27,575x^6+4,375x^7");
+                    Returns("+5x^1-4x^2+31x^3-54,25x^4+51,3x^5-27,575x^6+4,375x^7");
 
                 yield return new TestCaseData(
                         new Polynomial(0.0, 5.0, -4.0, 3.5),
                         new Polynomial(1.0, 0, 5.5, -6.45, 1.25)).
-                    Returns("0+5x^1-4x^2+31x^3-54,25x^4+51,3x^5-27,575x^6+4,375x^7");
+                    Returns("+5x^1-4x^2+31x^3-54,25x^4+51,3x^5-27,575x^6+4,375x^7");
             }
         }
         
